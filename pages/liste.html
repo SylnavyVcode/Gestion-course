@@ -9,22 +9,26 @@
   </head>
   <body>
     <section>
-      <header>
-        <a href="index.html">Courses</a>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="./creer.html">Créer une course</a></li>
-            <li><a href="./liste.html">Lister les courses</a></li>
-            <li><a href="./contact.html">Contactez-nous</a></li>
-          </ul>
-        </nav>
+      <header class="header">
+        <div class="container">
+          <div class="navbar">
+            <a href="../index.html">Courses</a>
+            <nav>
+              <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="./creer.html">Créer une course</a></li>
+                <li><a href="./liste.html">Lister les courses</a></li>
+                <li><a href="./contact.html">Contactez-nous</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </header>
-      <div>
+      <section class="container" id="section-liste">
         <h1 class="title">Liste de courses</h1>
-        <article>
-          <div>08 Juin 2025</div>
-          <div id="article-1">
+        <article class="article" id="article-1">
+          <div class="date-article">08 Juin 2025</div>
+          <div class="desc-article" id="article-1">
             <h2>Courses du Dimanche</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
@@ -32,12 +36,15 @@
               praesentium quasi nobis tenetur facere quae harum. Quisquam ab qui
               aliquid recusandae eligendi.
             </p>
-            <div>
-              <button  id="btn_delete-0" class="button">Supprimer</button>
+            <div class="actions">
+              <button id="btn_delete-0" class="button">Supprimer</button>
               <a class="link" href="#">Afficher</a>
             </div>
           </div>
-          <div id="article-2">
+        </article>
+        <article class="article">
+          <div class="date-article">09 Juin 2025</div>
+          <div class="desc-article" id="article-2">
             <h2>Courses du Lundi</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
@@ -45,12 +52,15 @@
               praesentium quasi nobis tenetur facere quae harum. Quisquam ab qui
               aliquid recusandae eligendi.
             </p>
-            <div>
+            <div class="actions">
               <button id="btn_delete-1" class="button">Supprimer</button>
               <a class="link" href="#">Afficher</a>
             </div>
           </div>
-          <div id="article-3">
+        </article>
+        <article class="article">
+          <div class="date-article">10 Juin 2025</div>
+          <div class="desc-article" id="article-3">
             <h2>Courses du Mardi</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
@@ -58,15 +68,15 @@
               praesentium quasi nobis tenetur facere quae harum. Quisquam ab qui
               aliquid recusandae eligendi.
             </p>
-            <div>
-              <button  id="btn_delete-2"  class="button">Supprimer</button>
+            <div class="actions">
+              <button id="btn_delete-2" class="button">Supprimer</button>
               <a class="link" href="#">Afficher</a>
             </div>
           </div>
         </article>
-      </div>
+      </section>
 
-      <footer class="footer">Copyright sv @ 2025</footer>
+      <footer><div class="footer">Copyright sv @ 2025</div></footer>
     </section>
   </body>
 </html>
