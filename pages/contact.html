@@ -25,12 +25,65 @@
         </div>
       </header>
       <section class="container" id="section-contact">
-        <h1 class="title">Page contact</h1>
-        <button id="btn-transmettre" type="button" class="btn">
-          Transmettre
-        </button>
+        <div class="header-contact">
+          <h1 class="title">Contactez-nous</h1>
+          <div>Nous sommes là pour vous.</div>
+          <div>
+            N'hésitez pas à nous contacter pour toute question ou préoccupation.
+          </div>
+        </div>
+
+        <form id="contact-form" class="form"  >
+          <div class="form-header">
+            Que vous ayez un projet en tête ou que vous cherchiez des conseils,
+            nous sommes là pour vous accompagner.
+          </div>
+          <div class="form-group">
+            <label for="firstname">Votre prénom:</label>
+            <input type="text" id="firstname" name="firstname" required />
+          </div>
+          <div class="form-group">
+            <label for="lastname">Votre nom:</label>
+            <input type="text" id="lastname" name="lastname" required />
+          </div>
+          <div class="form-group">
+            <div>Votre téléphone</div>
+            <div class="form-controls">
+              <select name="pays" id="select-pays">
+                <option value="">Votre Pays</option>
+                <option value="242">Congo</option>
+                <option value="243">RDC</option>
+              </select>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Votre téléphone"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="form-btn">
+            <button id="btn-annuler" type="button" class="btn">Annuler</button>
+            <button id="btn-transmettre" type="button" class="btn">
+              Transmettre
+            </button>
+          </div>
+          <div>
+            Merci de nous avoir contacté. Nous vous répondrons dans les
+            plus brefs délais.
+          </div>
+        </form>
       </section>
-     <footer><div class="footer">Copyright sv @ 2025</div></footer>
+      <footer><div class="footer">Copyright sv @ 2025</div></footer>
     </section>
   </body>
 </html>

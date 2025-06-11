@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(6, 22, 56);
-  font-family: Arial, sans-serif;
+  background-color: rgb(54, 63, 83);
+font-family: 'Times New Roman', serif;
   color: white;
   margin: 0;
   padding: 0;
@@ -159,11 +159,10 @@ a {
 /* ----------------------- */
 
 footer {
-  background-color: #12926c;
+  background-color: #000000;
   color: white;
   padding: 10px;
   text-align: center;
-  border-radius: 5px;
   margin-top: 10px;
   top: 0;
   bottom: 0;
@@ -181,4 +180,162 @@ footer {
   justify-content: space-between;
   align-items: center;
   height: 30px;
+}
+
+/* ------- Tableau -------- */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #12926c;
+  margin: 20px 0;
+}
+.table-computer {
+  width: 100%;
+  /* border: 1px solid #12926c; */
+  margin: 20px 0;
+}
+
+.table th,
+.table td {
+  border: 1px solid #12926c;
+  padding: 4px;
+  text-align: left;
+}
+.table-computer th,
+.table-computer td {
+  border: 1px solid #12926c;
+  padding: 4px;
+}
+
+.table-footer {
+  background-color: #12926c;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+.tfoot {
+  color: black;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* -------- Images -------- */
+.image {
+  /* background: url("../images/restaurant.png") no-repeat center center; */
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 2px 4px 5px rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  display: block;
+}
+.image-computer {
+  /* background: url("../images/restaurant.png") no-repeat center center; */
+  width: 60px;
+  height: auto;
+  border-radius: 5px;
+  margin: 2px auto;
+  display: block;
+}
+
+/* -------- Contact -------- */
+.header-contact, .form-header {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form{
+  background-color: #030916;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 7px rgba(255, 255, 255, 0.541);
+}
+.form-group {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  border: none;
+  background-color: transparent;
+}
+.form-controls {
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  background-color: transparent;
+}
+.form-controls input,
+.form-controls textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: white;
+}
+.form-controls input::placeholder {
+  color: white;
+}
+
+.form-controls select {
+  width: 25%;
+  background: transparent;
+  color: white;
+  padding-left: 5px;
+  border: 1px solid #ffffff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.form-group > input,
+.form-group > textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: white;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.form-btn > button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #12926c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#btn-annuler {
+  text-align: center;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 7px;
+  width: 100%;
+  padding: 8px 10px;
+}
+#btn-annuler:hover {
+  background-color: #000000;
+  color: white;
+  font-weight: 600;
+  transition: all 0.7s ease;
+  cursor: pointer;
 }
